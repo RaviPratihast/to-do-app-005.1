@@ -33,6 +33,7 @@ function createTodo(event){
 
     const deleteBtn=document.createElement('button');
     deleteBtn.classList.add('delete-btn');
+    deleteBtn.classList.add('delete');
     deleteBtn.innerHTML='Del';
 
     // assining
@@ -42,7 +43,7 @@ function createTodo(event){
     // appending
     todo.appendChild(todoDiv);
     todoDiv.appendChild(li);
-    todoDiv.appendChild(checkedBtn);
+    // todoDiv.appendChild(checkedBtn);
     todoDiv.appendChild(deleteBtn);
 
     // empty the box
@@ -57,10 +58,11 @@ function createTodo(event){
 function deleteItem(e){
     // grab the item which we are clicking;
     const item=e.target;
-    console.log(item.classList[0]);
+    // console.log(item);
+    // console.log(item.classList[1]);
 
-    if(item.classList[1]==='delete-btn'){
-      const todo=item.parentElement;
-      todo.remove();
+    if(item.classList.contains('delete-btn')){
+      const todoP=item.parentElement;
+      todoP.remove();
     }
 }
