@@ -8,10 +8,16 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+
+
+    display: flex;
+    justify-content: center;
+    
 }
 
 .todo-app-container {
     height: 90vh;
+    width: 60vw;
     border: 2px solid black;
     /* margin-inline:1rem; */
     margin: 1rem 7rem;
@@ -20,14 +26,16 @@ body {
 }
 
 form {
-    margin-block: 4rem;
+    margin-block: 2rem;
     padding: 2rem;
-    border: 2px solid black;
+    border: 2px solid rgb(22, 197, 45);
     margin-inline: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1rem;
+
+    
 
 }
 
@@ -51,11 +59,14 @@ form {
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
+    flex-wrap: wrap;
     gap: 1rem;
 
     list-style: none;
+    margin-inline: 1rem;
+    height:32rem ;
     border: 2px solid red;
 }
 
@@ -64,8 +75,28 @@ form {
 .todo-list-container{
     width: 30rem;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     gap: 1rem;
 
 
+    margin-top: 0.5rem;
+    padding:0.5rem;
+    /* margin: 2rem; */
+
+
     border: 2px solid blue;
+}
+.todo-item-added{
+    inline-size: 360px;
+    overflow-wrap:break-word;
+    border: 2px solid yellow;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    padding: 0.5rem;
+}
+.delete{
+    height: 2rem;
+    width: 4rem;
 }
