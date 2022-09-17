@@ -10,31 +10,40 @@ body {
     font-family: 'Roboto', sans-serif;
 
 
-    /* display: flex;
-    justify-content: center; */
+    height: 100vh;
+     display: flex;
+    justify-content: center; 
+    align-items: center;
     
 }
 
 .todo-app-container {
-    height: 100vh;
+    height: 90vh;
+    width: 90vw;
     /* height: 90vh; */
     /* width: 60vw; */
     border: 2px solid black;
-    /* margin-inline:1rem; */
+    /* margin-inline:5rem; */
     /* margin: 1rem 7rem; */
 
-    background-image: linear-gradient(45deg, #348F50, #56B4D3);
+    /* background-image: linear-gradient(45deg, #348F50, #56B4D3); */
+    background-color: white;
 }
 
 form {
-    margin-block: 2rem;
-    padding: 2rem;
-    border: 2px solid rgb(22, 197, 45);
-    margin-inline: 1rem;
+    /* margin-block: 2rem; */
+    /* padding:rem; */
+    /* border: 2px solid rgb(22, 197, 45); */
+    background-color:#0d9488;
+    /* margin-inline: 5rem; */
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1rem;
+
+
+    margin: 2rem;
+    padding: 4rem;
 
     
 
@@ -43,13 +52,29 @@ form {
 /* input field */
 .input-field {
 
-    padding: 0.5rem 6rem;
+
+    padding: 0.5rem;
+    border: 0;
+    outline: none;
+    font-size: 34px;
+    display: flex;
+    justify-content: flex-start;
+    
 }
 
 .add-btn {
-    padding: 0.5rem;
+    padding: 0.6rem 1.5rem;
+    font-family: inherit;
+    border: none;
+    font-size:16px;
+
+
+    border-radius: 6px;
 }
 
+.add-btn:hover{
+    transform: translate(24px);
+}
 
 /* dynamic creation part ul */
 
@@ -66,9 +91,9 @@ form {
     gap: 1rem;
 
     list-style: none;
-    margin-inline: 1rem;
-    height:32rem ;
-    border: 2px solid red;
+    /* margin-inline: 1rem; */
+    /* height:32rem ; */
+    /* border: 2px solid red; */
 }
 
 /* dynamic part styling */
